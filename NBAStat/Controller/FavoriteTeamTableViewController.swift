@@ -114,16 +114,9 @@ class FavoriteTeamTableViewController
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = Bundle.main.loadNibNamed("TeamTableViewCell", owner: self, options: nil)?.first as! TeamTableViewCell
         
-//        cell.selectionStyle = .none
         
         cell.lblTeam.text = arrMyTeam[indexPath.row].fullName
         
-        
-        
-        
-//        cell.backgroundColor = UIColor(red: 0.37, green: 0.36, blue: 0.90, alpha: 1.00)
-//        cell.layer.cornerRadius = 20
-//        cell.layer.masksToBounds = true
         
         return cell
     }
@@ -136,6 +129,29 @@ class FavoriteTeamTableViewController
         performSegue(withIdentifier: "detailSegue", sender: cell)
         
         
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+      if editingStyle == .delete {
+        print("Deleted")
+        self.deleteTeamInDB(arrMyTeam[indexPath.row])
+        self.arrMyTeam.remove(at: indexPath.row)
+        
+        
+        self.tblView.deleteRows(at: [indexPath], with: .automatic)
+      }
+    }
+    
+    
+    func deleteTeamInDB(_ teamMeta : TeamMeta){
+        do{
+            let realm = try Realm()
+            try realm.write {
+                realm.delete(teamMeta)
+            }
+        }catch{
+            print("Error in getting values from DB \(error)")
+        }
     }
     
     
