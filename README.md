@@ -49,9 +49,9 @@ If the username and password is valid. It will present the main menu view contro
 If the username is invalid, it will shows a message about the username or password is invalid.
 
 ### The Logout Flow
-Click the logout button in navigation bar, the App will log out.
+Click the logout button in navigation bar, the App will log out and jump to the log in View controller
 Logout does NOT clear the favorite team information from the local database
-After the logout process the App will present the log in view controller
+
 
 ### The main menu
 In the main menu. there is two button. My favorite team and All team. The All team view controller would populate all NBA team. The user can follow their interested 
