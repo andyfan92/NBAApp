@@ -34,7 +34,7 @@
 		31FD56DC27630EEF00B3FA5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FD56DB27630EEF00B3FA5A /* ViewController.swift */; };
 		31FD56DE2763132600B3FA5A /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FD56DD2763132600B3FA5A /* Keychain.swift */; };
 		31FD56E127631ECC00B3FA5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31FD56DF27631ECC00B3FA5A /* Main.storyboard */; };
-		31FD56E32763C98B00B3FA5A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FD56E22763C98B00B3FA5A /* SecondViewController.swift */; };
+		31FD56E32763C98B00B3FA5A /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FD56E22763C98B00B3FA5A /* MainMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,7 +67,7 @@
 		31FD56DB27630EEF00B3FA5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		31FD56DD2763132600B3FA5A /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		31FD56E027631ECC00B3FA5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		31FD56E22763C98B00B3FA5A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		31FD56E22763C98B00B3FA5A /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		4DFFED84FEAECC95543C9A3D /* Pods_NBAStat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBAStat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95B0559F89A53DCADB983CB6 /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
 		C67761B36A7FFF47453CE826 /* Pods-NBAStat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBAStat.release.xcconfig"; path = "Target Support Files/Pods-NBAStat/Pods-NBAStat.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 				31FD56D52762E03E00B3FA5A /* GameTableViewCell.swift */,
 				31FD56D62762E03E00B3FA5A /* GameTableViewCell.xib */,
 				31FD56DB27630EEF00B3FA5A /* ViewController.swift */,
-				31FD56E22763C98B00B3FA5A /* SecondViewController.swift */,
+				31FD56E22763C98B00B3FA5A /* MainMenuViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -305,7 +305,7 @@
 				31FD56D32762C0A900B3FA5A /* PlayerTableViewCell.swift in Sources */,
 				31FD56C02761878500B3FA5A /* DetailViewController.swift in Sources */,
 				31FD56C32761977B00B3FA5A /* TeamDetailTableViewCell.swift in Sources */,
-				31FD56E32763C98B00B3FA5A /* SecondViewController.swift in Sources */,
+				31FD56E32763C98B00B3FA5A /* MainMenuViewController.swift in Sources */,
 				313BB27D272BBB8900CAD96C /* AppDelegate.swift in Sources */,
 				31FD56CC2762AC3600B3FA5A /* PlayerViewController.swift in Sources */,
 				31FD56DE2763132600B3FA5A /* Keychain.swift in Sources */,

@@ -171,7 +171,7 @@
         <!--Main Menu-->
         <scene sceneID="FaC-JT-u2j">
             <objects>
-                <viewController id="Ay6-Ko-mPl" customClass="SecondViewController" customModule="NBAStat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ay6-Ko-mPl" customClass="MainMenuViewController" customModule="NBAStat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z8A-q2-owS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

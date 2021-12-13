@@ -10,7 +10,14 @@ import UIKit
 import Firebase
 import SwiftSpinner
 
-class SecondViewController: UIViewController {
+import RealmSwift
+import Alamofire
+import SwiftyJSON
+import SwiftSpinner
+import PromiseKit
+
+
+class MainMenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +36,8 @@ class SecondViewController: UIViewController {
             print(error.localizedDescription)
         }
     }
+    
+    
     /*
     // MARK: - Navigation
 

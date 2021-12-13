@@ -166,7 +166,6 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 if response.error != nil {
                     seal.reject(response.error!)
                 }
-                print(response)
                 
                 let teamInfo = TeamInfo()
                 
@@ -192,7 +191,24 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     }
                 }
                 
-                print(self.arrAllTeam)
+                
+                for i in 0 ... self.arrAllTeam.count - 1 {
+                    if self.arrAllTeam[i].teamId == self.strLabel {
+                        let teamInfo = self.arrAllTeam[i]
+                        self.team["TeamId"] = teamInfo.teamId
+                        self.team["FullName"] = teamInfo.fullName
+                        self.team["NickName"] = teamInfo.nickName
+                        self.team["City"] = teamInfo.city
+                        self.team["Logo"] = teamInfo.logo
+                        self.team["ShortName"] = teamInfo.shortName
+                        self.team["ConfName"] = teamInfo.confName
+                        self.team["DivName"] = teamInfo.divName
+                    }
+                }
+                
+                
+                
+                self.tblView.reloadData()
                 
                 seal.fulfill(teamInfo)
                 
