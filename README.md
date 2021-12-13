@@ -2,7 +2,7 @@
 
 ## Goals
 The NBA stat app can help you stay up to date on everything NBA. it can bring you everything that you need to be the most in-the-know basketball fan possible.
-It combines up-to-the-second live scores and stats from the NBA with the most in-depth statistical database.
+It combines real time live scores and stats from the NBA with the most in-depth statistical database.
 
 
 ## Implementation Part
