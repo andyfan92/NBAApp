@@ -44,7 +44,7 @@ It include the following common UI features:
 ### The Login Flow
 
 Use Firebase Authentication's backend services to authenticate users to your app.  
-It will send only the username and password
+It will send the username and password to the Firebase backend server.
 If the username and password is valid. It will present the main menu view controller
 If the username is invalid, it will show s a message about the username or password is invalid
 
