@@ -21,7 +21,9 @@ It gives users feedback around network activity, displaying activity indicators 
 ### Persistant
 
 The App incorporate data that needs to be persisted between runs of the app.
-User can follow the team they interested, the favorite team will be stored locally
+User can follow the team they interested, the favorite team will be stored locally.When the app start up the App read the user's favorite team from local database.
+
+
 
 ### MVC
 The App adopt MVC architecture. which separate the user interface from business logic and business logic and ensure components are reusable.
