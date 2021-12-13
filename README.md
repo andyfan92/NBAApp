@@ -32,11 +32,11 @@ The App adopt MVC architecture. which separate the user interface from business 
 
 It include the following common UI features:
 
-* 7 view controllers and use the segues to define between two view controllers.
+* There are 7 view controllers and use the segues to define transition between two view controllers.
 * The table view controller can show the team's detail, player and recent game information
 * Use navigation controller to manages one or more child view controllers in a navigation interface. 
 * The image asset and logo have different format
-* And the autolayout make the APP does not go out of bounds on small screens. 
+* The autolayout make the APP does not go out of bounds on small screens. 
 
 
 ## Requirement Part
