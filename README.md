@@ -9,17 +9,22 @@ It combines real time live scores and stats from the NBA with the most in-depth 
 
 ### Networking
 
+https://rapidapi.com/api-sports/api/api-nba/
+
 
 The App incorporate data from a networked source:
-Use API https://rapidapi.com/api-sports/api/api-nba/ and integrate downloaded data into the app.
+Use Restful API to request data and integrate downloaded data into the app.
 
 It gives users feedback around network activity, displaying activity indicators when appropriate, and an alert in case of connection failures
-Encapsulate networking code in a class to reduce detail in View Controllers
+
 
 ### Persistant
 
 The App incorporate data that needs to be persisted between runs of the app.
 User can follow the team they interested, the favorite team will be stored locally
+
+### MVC
+The App adopt MVC architecture. which separate the user interface from business logic and business logic and ensure components are reusable.
 
 ## Visual Part
 
