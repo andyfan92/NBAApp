@@ -55,7 +55,7 @@ Logout does NOT clear the favorite team information from the local database
 
 ### The main menu
 In the main menu. there is two button. My favorite team and All team. The All team view controller would populate all NBA team. The user can follow their interested 
-team by clicking the table cell and this part of information will be persisted locally. For the favorite team view controller the user can swipe the table cell to delete it and click it to jump to team detail view controller. When the app start up the App read the user's favorite team from local database.
+team by clicking the table cell and this part of information will be persisted locally. For the favorite team view controller the user can swipe the table cell to delete it and click it to jump to team detail view controller. When the app start up the App read the user's favorite team from local database and poplute the favorite team in favorite team view controller.
 
 
 ### The detail page
