@@ -107,7 +107,6 @@
 		313BB27B272BBB8900CAD96C /* NBAStat */ = {
 			isa = PBXGroup;
 			children = (
-				31FD56DF27631ECC00B3FA5A /* Main.storyboard */,
 				313BB292272BBED600CAD96C /* View */,
 				313BB291272BBECF00CAD96C /* Model */,
 				313BB290272BBEC900CAD96C /* Controller */,
@@ -159,6 +158,7 @@
 		313BB292272BBED600CAD96C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				31FD56DF27631ECC00B3FA5A /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
