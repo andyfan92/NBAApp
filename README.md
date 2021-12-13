@@ -2,9 +2,7 @@
 
 ## Goals
 The NBA stat app can help you stay up to date on everything NBA. it can bring you everything that you need to be the most in-the-know basketball fan possible.
-
-
-Built by NBA fans, for NBA fans, combining up-to-the-second live scores and stats from the NBA with the most in-depth statistical database.
+It combines up-to-the-second live scores and stats from the NBA with the most in-depth statistical database.
 
 
 ## Implementation Part
@@ -13,48 +11,50 @@ Built by NBA fans, for NBA fans, combining up-to-the-second live scores and stat
 
 
 The App incorporate data from a networked source:
-Use API https://rapidapi.com/api-sports/api/api-nba/ and integrate downloaded data into the app
-Give users feedback around network activity, displaying activity indicators and/or progress bars when appropriate, and an alert in case of connection failures
+Use API https://rapidapi.com/api-sports/api/api-nba/ and integrate downloaded data into the app.
+
+It gives users feedback around network activity, displaying activity indicators when appropriate, and an alert in case of connection failures
 Encapsulate networking code in a class to reduce detail in View Controllers
 
 ### Persistant
 
 The App incorporate data that needs to be persisted between runs of the app.
-User can follow the team they interested, and some of the value will be saved locally.
-
+User can follow the team they interested, the favorite team will be stored locally
 
 ## Visual Part
 
 It include the following common UI features:
 
-* More than one view controller
-* A table or collection view
-* Navigation and modal presentation
-* Image assets in 1x, 2x, and 3x formats. 
-* Logo
-* Autolayout
+* 7 view controllers and use the segues to define between two view controllers.
+* The table view controller can show the team's detail, player and recent game information
+* Use navigation controller to manages one or more child view controllers in a navigation interface. 
+* The image asset and logo have different format
+* And the autolayout make the APP does not go out of bounds on small screens. 
 
 
 ## Requirement Part
 
 ### The Login Flow
 
+Use Firebase Authentication's backend services to authenticate users to your app.  
 It will send only the username and password
-If the username and password is valid the server will respond with the user's favorite team.
-If the username is invalid, respond with a login form that contains a message about the username being invalid
+If the username and password is valid. It will present the main menu view controller
+If the username is invalid, it will show s a message about the username or password is invalid
 
 ### The Logout Flow
-Logout does NOT clear the favorite team information from the local
-After the logout process the server will respond with a redirect to the Home Page
+Click the logout button in navigation bar, the App will log out.
+Logout does NOT clear the favorite team information from the local database
+After the logout process the App will present the log in view controller
 
-### All Teams
-In the home viewcontroller add a table view which would populate the list of teams that match your search. Use API https://api-nba-v1.p.rapidapi.com/teams/league/standard to acquire all team.
+### The main menu
+In the main menu. there is two button. My favorite team and All team. The All team view controller would populate all NBA team. The user can follow their interested 
+team by clicking the table cell and this part of information will be persisted locally. For the favorite team view controller the user can swipe the table cell to delete it and click it to jump to team detail view controller. When the app start up the App read the user's favorite team from local database.
 
-### Team Players
-When the app starts up the first table view controller will read teams and then get the team information and team player information. Use API https://api-nba-v1.p.rapidapi.com/players/teamId/%7Bteamid%7D to acquire target team's player information and use API https://api-nba-v1.p.rapidapi.com/teams/teamId/null to acquire logo and other information
 
-### My favorite team
-User can follow the team they interested, and some of the information will be stored locally to prevent too much network communication.
+### The detail page
+The detail page will show the team's basic information and team's logo. when the user click the player button, it will make a network call to get all the team information of that team. when the user click the game button, it will get the recent game informtion of that team and show in the view controller. the game is sorted in reversed chronology order. So the top game is the recent game.
+
+
 
 
 
